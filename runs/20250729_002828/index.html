@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SND-Bench Results - qwen2.5-1.5b-instruct-q4_k_m.gguf</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .metric {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .wandb-link {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .wandb-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SND-Bench Benchmark Results</h1>
+            <p>Model: <strong>qwen2.5-1.5b-instruct-q4_k_m.gguf</strong></p>
+            <p>Run ID: 20250729_002828 | 2025-07-29T00:28:30.645059</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Current Run Metrics</h3>
+                <div class="metric">0.00%</div>
+                <p>Average Accuracy</p>
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Accuracy</th>
+                    </tr>
+                    <tr><td>perplexity</td><td>0.00%</td></tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Historical Performance</h3>
+                <p>Total Runs: <strong>8</strong></p>
+                <p>Best Accuracy: <strong>0.00%</strong></p>
+                <div class="chart-container">
+                    <canvas id="historyChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Recent Runs</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Model</th>
+                    <th>Accuracy</th>
+                    <th>W&B</th>
+                </tr>
+                <tr>
+                    <td>2025-07-28</td>
+                    <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                    <td>0.00%</td>
+                    <td><a href="https://wandb.ai/sndlabs/llm-bench/runs/v50s2235" class="wandb-link" target="_blank">View</a></td>
+                </tr><tr>
+                    <td>2025-07-28</td>
+                    <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                    <td>0.00%</td>
+                    <td><a href="https://wandb.ai/sndlabs/llm-bench/runs/ztujkzvz" class="wandb-link" target="_blank">View</a></td>
+                </tr><tr>
+                    <td>2025-07-28</td>
+                    <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                    <td>0.00%</td>
+                    <td><a href="https://wandb.ai/sndlabs/llm-bench/runs/ynlgwd36" class="wandb-link" target="_blank">View</a></td>
+                </tr><tr>
+                    <td>2025-07-28</td>
+                    <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                    <td>0.00%</td>
+                    <td><a href="https://wandb.ai/sndlabs/llm-bench/runs/78qicwqu" class="wandb-link" target="_blank">View</a></td>
+                </tr><tr>
+                    <td>2025-07-28</td>
+                    <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                    <td>0.00%</td>
+                    <td><a href="https://wandb.ai/sndlabs/llm-bench/runs/43zib5if" class="wandb-link" target="_blank">View</a></td>
+                </tr><tr>
+                    <td>2025-07-28</td>
+                    <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                    <td>0.00%</td>
+                    <td><a href="https://wandb.ai/sndlabs/llm-bench/runs/67tcxo0t" class="wandb-link" target="_blank">View</a></td>
+                </tr><tr>
+                    <td>2025-07-28</td>
+                    <td>test-model-q4_k_m.gguf</td>
+                    <td>0.00%</td>
+                    <td><a href="https://wandb.ai/sndlabs/llm-bench/runs/gtl3262m" class="wandb-link" target="_blank">View</a></td>
+                </tr><tr>
+                    <td>2025-07-22</td>
+                    <td>qwen2.5-1.5b-instruct-q4_k_m</td>
+                    <td>0.00%</td>
+                    <td><a href="https://wandb.ai/sndlabs/llm-bench/runs/m3x28hiy" class="wandb-link" target="_blank">View</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>AI Summary</h3>
+            <pre style="white-space: pre-wrap;">## Executive Summary: Qwen 2.5 1.5B Benchmark Analysis
+
+The benchmark run for the Qwen 2.5 1.5B instruction-tuned model (quantized to 4-bit) reveals a critical failure in the evaluation process. The model achieved 0% accuracy across all metrics, with zero samples successfully processed during the perplexity evaluation. This indicates a fundamental issue with either the benchmark execution, model compatibility, or the evaluation framework itself, rather than poor model performance.
+
+The lightweight 1.0GB model size suggests aggressive quantization (Q4_K_M format), which typically trades some accuracy for significant memory savings. However, the complete absence of successful evaluations points to a technical failure rather than quantization-related performance degradation. The perplexity task, which measures how well the model predicts text, failed to process any samples, suggesting potential issues with input formatting, tokenization, or model loading.
+
+This benchmark run has been tracked in Weights & Biases ([Run v50s2235](https://wandb.ai/sndlabs/llm-bench/runs/v50s2235)) for detailed analysis. Immediate investigation is recommended to identify whether this is a configuration issue, compatibility problem with the GGUF format, or a bug in the benchmark harness. Re-running the benchmark with verbose logging and verifying the model loads correctly should be the next steps before drawing any conclusions about the model's actual capabilities.</pre>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('historyChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["2025-07-28", "2025-07-28", "2025-07-28", "2025-07-28", "2025-07-28", "2025-07-28", "2025-07-28", "2025-07-22"],
+                datasets: [{
+                    label: 'Average Accuracy',
+                    data: [0, 0, 0, 0, 0, 0, 0, 0],
+                    borderColor: 'rgb(59, 130, 246)',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    yAxisID: 'y-accuracy',
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    'y-accuracy': {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        ticks: {
+                            callback: function(value) {
+                                return (value * 100).toFixed(0) + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

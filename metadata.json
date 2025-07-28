@@ -1,0 +1,36 @@
+{
+  "benchmarks": [
+    {
+      "id": "benchmark-1753710427048",
+      "runId": "20250728_224700",
+      "modelName": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "modelFamily": "Qwen",
+      "quantization": "q4_k_m",
+      "size": 0,
+      "mainMetric": 0.0,
+      "mainMetricName": "Average Accuracy",
+      "benchmarkMode": "accuracy",
+      "tasks": 1,
+      "timestamp": "2025-07-28T22:47:03.516361",
+      "url": "runs/20250728_224700/index.html",
+      "wandbUrl": "#",
+      "averageAccuracy": 0.0
+    },
+    {
+      "id": "benchmark-1753685122211",
+      "runId": "20250728_154516",
+      "modelName": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "modelFamily": "Qwen",
+      "quantization": "q4_k_m",
+      "size": 0,
+      "mainMetric": 0.0,
+      "mainMetricName": "Average Accuracy",
+      "benchmarkMode": "accuracy",
+      "tasks": 1,
+      "timestamp": "2025-07-28T15:45:18.753833",
+      "url": "runs/20250728_154516/index.html",
+      "wandbUrl": "#",
+      "averageAccuracy": 0.0
+    }
+  ]
+}

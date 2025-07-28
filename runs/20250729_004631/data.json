@@ -1,0 +1,124 @@
+{
+  "run_id": "20250729_004631",
+  "timestamp": "2025-07-29T00:46:34.502497",
+  "model": {
+    "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "path": "/Users/victor/GitHub/snd-bench/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "size": "1.0G"
+  },
+  "results": {
+    "perplexity": {
+      "accuracy": 0,
+      "stderr": 0,
+      "samples": 0
+    }
+  },
+  "average_accuracy": 0.0,
+  "total_tasks": 1,
+  "wandb_history": [
+    {
+      "id": "q20j435e",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250729_004631",
+      "created_at": "2025-07-28T15:46:36Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/q20j435e",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "v50s2235",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250729_002828",
+      "created_at": "2025-07-28T15:28:32Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/v50s2235",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "ztujkzvz",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250729_002327",
+      "created_at": "2025-07-28T15:23:31Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/ztujkzvz",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "ynlgwd36",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250729_002147",
+      "created_at": "2025-07-28T15:21:50Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/ynlgwd36",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "78qicwqu",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250729_000923",
+      "created_at": "2025-07-28T15:09:27Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/78qicwqu",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "43zib5if",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250728_233812",
+      "created_at": "2025-07-28T14:38:16Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/43zib5if",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "67tcxo0t",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250728_232219",
+      "created_at": "2025-07-28T14:22:24Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/67tcxo0t",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "gtl3262m",
+      "name": "test-model-q4_k_m.gguf-test_wandb_20250728",
+      "created_at": "2025-07-28T14:10:08Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/gtl3262m",
+      "model": "test-model-q4_k_m.gguf",
+      "metrics": {
+        "perplexity": 12.5,
+        "model_size_gb": 1.5
+      }
+    },
+    {
+      "id": "m3x28hiy",
+      "name": "Pipeline Test 2025-07-22 22:27",
+      "created_at": "2025-07-22T13:27:23Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/m3x28hiy",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m",
+      "metrics": {}
+    }
+  ],
+  "summary": "## Executive Summary: Qwen 2.5 1.5B Benchmark Analysis\n\nThe benchmark evaluation of the Qwen 2.5 1.5B model (quantized to 4-bit K_M format) reveals critical issues that prevented successful performance assessment. The model, with a compact size of 1.0GB, failed to generate valid results across the perplexity evaluation task, recording zero accuracy with no successfully processed samples.\n\nThis complete failure suggests potential technical issues rather than poor model performance. The zero sample count indicates the model either failed to initialize properly, encountered compatibility issues with the evaluation framework, or experienced runtime errors during inference. The quantized format (Q4_K_M) may have introduced complications in the testing pipeline that need investigation.\n\nThe benchmark run has been tracked in Weights & Biases ([run q20j435e](https://wandb.ai/sndlabs/llm-bench/runs/q20j435e)) for detailed debugging and analysis. Immediate next steps should include verifying model compatibility, checking quantization parameters, and ensuring proper integration with the evaluation framework before attempting performance conclusions."
+}
