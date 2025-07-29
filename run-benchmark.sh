@@ -819,53 +819,53 @@ def generate_summary(results_data, wandb_data=None, debug=False):
     summary_parts = []
     
     # Header
-    summary_parts.append(f"# Benchmark Summary - {results_data.get('run_id', 'Unknown')}")
-    summary_parts.append(f"\n**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    summary_parts.append(f"# 벤치마크 요약 - {results_data.get('run_id', 'Unknown')}")
+    summary_parts.append(f"\n**생성 시간:** {datetime.now().strftime('%Y년 %m월 %d일 %H:%M:%S')}")
     
     # Model info
     model_info = results_data.get('model', {})
-    summary_parts.append(f"\n## Model: {model_info.get('name', 'Unknown')}")
+    summary_parts.append(f"\n## 모델: {model_info.get('name', 'Unknown')}")
     
     # Results summary
     results = results_data.get('results', {})
     if results:
-        summary_parts.append("\n## Results Overview")
-        summary_parts.append(f"- **Tasks evaluated:** {len(results)}")
-        summary_parts.append(f"- **Average accuracy:** {results_data.get('average_accuracy', 0):.4f}")
+        summary_parts.append("\n## 결과 개요")
+        summary_parts.append(f"- **평가된 작업 수:** {len(results)}개")
+        summary_parts.append(f"- **평균 정확도:** {results_data.get('average_accuracy', 0):.4f}")
         
-        summary_parts.append("\n### Task Performance:")
+        summary_parts.append("\n### 작업별 성능:")
         for task, metrics in results.items():
             summary_parts.append(f"- **{task}:** {metrics.get('accuracy', 0):.4f} (±{metrics.get('stderr', 0):.4f})")
     
     # W&B integration
     if wandb_data:
-        summary_parts.append("\n## W&B Integration")
+        summary_parts.append("\n## W&B 연동")
         if isinstance(wandb_data, list) and len(wandb_data) > 0:
             run = wandb_data[0]  # Latest run
-            summary_parts.append(f"- **W&B Run:** [{run.get('name')}]({run.get('url', '#')})")
-            summary_parts.append(f"- **Project:** {run.get('project', 'Unknown')}")
+            summary_parts.append(f"- **W&B 실행:** [{run.get('name')}]({run.get('url', '#')})")
+            summary_parts.append(f"- **프로젝트:** {run.get('project', 'Unknown')}")
             
             # System metrics
             system_metrics = run.get('system_metrics', {})
             if system_metrics:
-                summary_parts.append("\n### System Metrics:")
-                summary_parts.append(f"- **Runtime:** {system_metrics.get('runtime', 0):.2f}s")
-                summary_parts.append(f"- **GPU Count:** {system_metrics.get('gpu_count', 0)}")
-                summary_parts.append(f"- **CPU Count:** {system_metrics.get('cpu_count', 0)}")
+                summary_parts.append("\n### 시스템 메트릭:")
+                summary_parts.append(f"- **실행 시간:** {system_metrics.get('runtime', 0):.2f}초")
+                summary_parts.append(f"- **GPU 개수:** {system_metrics.get('gpu_count', 0)}개")
+                summary_parts.append(f"- **CPU 코어:** {system_metrics.get('cpu_count', 0)}개")
     
     # Performance insights
-    summary_parts.append("\n## Key Insights")
+    summary_parts.append("\n## 주요 인사이트")
     
     # Analyze performance
     if results:
         best_task = max(results.items(), key=lambda x: x[1].get('accuracy', 0))
         worst_task = min(results.items(), key=lambda x: x[1].get('accuracy', 0))
         
-        summary_parts.append(f"- **Best performance:** {best_task[0]} ({best_task[1].get('accuracy', 0):.4f})")
-        summary_parts.append(f"- **Needs improvement:** {worst_task[0]} ({worst_task[1].get('accuracy', 0):.4f})")
+        summary_parts.append(f"- **최고 성능:** {best_task[0]} ({best_task[1].get('accuracy', 0):.4f})")
+        summary_parts.append(f"- **개선 필요:** {worst_task[0]} ({worst_task[1].get('accuracy', 0):.4f})")
     
     # Hardware utilization
-    summary_parts.append(f"\n## Hardware Profile: {results_data.get('hardware_profile', 'Unknown')}")
+    summary_parts.append(f"\n## 하드웨어 프로필: {results_data.get('hardware_profile', 'Unknown')}")
     
     return "\n".join(summary_parts)
 
