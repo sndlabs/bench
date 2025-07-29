@@ -1,0 +1,26 @@
+{
+  "run_id": "lm-eval_20250729_103822",
+  "timestamp": "2025-07-29T10:40:00.627731",
+  "model": {
+    "name": "gpt2",
+    "path": "gpt2"
+  },
+  "framework": "lm-eval",
+  "hardware_profile": "apple-m4-max",
+  "tasks": [
+    "arc_easy"
+  ],
+  "total_tasks": 1,
+  "results": {
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.43813131313131315,
+      "acc_stderr,none": 0.010180937100600149,
+      "acc_norm,none": 0.3947811447811448,
+      "acc_norm_stderr,none": 0.01003003893588357
+    }
+  },
+  "average_accuracy": 0.43813131313131315,
+  "completed": true,
+  "summary": "\"# Benchmark Summary - lm-eval_20250729_103822\\n\\n**Generated:** 2025-07-29 10:40:00\\n\\n## Model: gpt2\\n\\n## Results Overview\\n- **Tasks evaluated:** 1\\n- **Average accuracy:** 0.4381\\n\\n### Task Performance:\\n- **arc_easy:** 0.0000 (±0.0000)\\n\\n## Key Insights\\n- **Best performance:** arc_easy (0.0000)\\n- **Needs improvement:** arc_easy (0.0000)\\n\\n## Hardware Profile: apple-m4-max\""
+}

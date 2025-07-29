@@ -52,7 +52,7 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <h3>Total Runs</h3>
-                    <div class="value">21</div>
+                    <div class="value">22</div>
                 </div>
                 <div class="stat-card">
                     <h3>Models Tested</h3>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="stat-card">
                     <h3>Average Accuracy</h3>
-                    <div class="value">17.00%</div>
+                    <div class="value">17.07%</div>
                 </div>
                 <div class="stat-card">
                     <h3>W&B Runs</h3>
@@ -83,6 +83,21 @@
                     </tr>
                 </thead>
                 <tbody>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_154839/index.html">lm-eval_20250729_154839</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>kmmlu, kmmlu_applied_science, kmmlu_aviation_engineering_and_maintenance, kmmlu_electronics_engineering, kmmlu_energy_management, kmmlu_environmental_science, kmmlu_gas_technology_and_engineering, kmmlu_geomatics, kmmlu_industrial_engineer, kmmlu_machine_design_and_manufacturing, kmmlu_maritime_engineering, kmmlu_nondestructive_testing, kmmlu_railway_and_automotive_engineering, kmmlu_telecommunications_and_wireless_technology, kmmlu_humss, kmmlu_accounting, kmmlu_criminal_law, kmmlu_economics, kmmlu_education, kmmlu_korean_history, kmmlu_law, kmmlu_management, kmmlu_political_science_and_sociology, kmmlu_psychology, kmmlu_social_welfare, kmmlu_taxation, kmmlu_other, kmmlu_agricultural_sciences, kmmlu_construction, kmmlu_fashion, kmmlu_food_processing, kmmlu_health, kmmlu_interior_architecture_and_design, kmmlu_marketing, kmmlu_patent, kmmlu_public_safety, kmmlu_real_estate, kmmlu_refrigerating_machinery, kmmlu_stem, kmmlu_biology, kmmlu_chemical_engineering, kmmlu_chemistry, kmmlu_civil_engineering, kmmlu_computer_science, kmmlu_ecology, kmmlu_electrical_engineering, kmmlu_information_technology, kmmlu_materials_engineering, kmmlu_math, kmmlu_mechanical_engineering, mmlu, mmlu_humanities, mmlu_formal_logic, mmlu_high_school_european_history, mmlu_high_school_us_history, mmlu_high_school_world_history, mmlu_international_law, mmlu_jurisprudence, mmlu_logical_fallacies, mmlu_moral_disputes, mmlu_moral_scenarios, mmlu_philosophy, mmlu_prehistory, mmlu_professional_law, mmlu_world_religions, mmlu_other, mmlu_business_ethics, mmlu_clinical_knowledge, mmlu_college_medicine, mmlu_global_facts, mmlu_human_aging, mmlu_management, mmlu_marketing, mmlu_medical_genetics, mmlu_miscellaneous, mmlu_nutrition, mmlu_professional_accounting, mmlu_professional_medicine, mmlu_virology, mmlu_social_sciences, mmlu_econometrics, mmlu_high_school_geography, mmlu_high_school_government_and_politics, mmlu_high_school_macroeconomics, mmlu_high_school_microeconomics, mmlu_high_school_psychology, mmlu_human_sexuality, mmlu_professional_psychology, mmlu_public_relations, mmlu_security_studies, mmlu_sociology, mmlu_us_foreign_policy, mmlu_stem, mmlu_abstract_algebra, mmlu_anatomy, mmlu_astronomy, mmlu_college_biology, mmlu_college_chemistry, mmlu_college_computer_science, mmlu_college_mathematics, mmlu_college_physics, mmlu_computer_security, mmlu_conceptual_physics, mmlu_electrical_engineering, mmlu_elementary_mathematics, mmlu_high_school_biology, mmlu_high_school_chemistry, mmlu_high_school_computer_science, mmlu_high_school_mathematics, mmlu_high_school_physics, mmlu_high_school_statistics, mmlu_machine_learning</td>
+                        <td>0.1854</td>
+                        <td>2025-07-29T16:09:09.116564</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_154839/index.html">View</a>
+                            
+                        </td>
+                    </tr>
                     
                     <tr>
                         <td>
@@ -369,21 +384,6 @@
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td>
-                            <a href="runs/20250728_224700/index.html">20250728_224700</a>
-                            
-                        </td>
-                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
-                        <td>perplexity</td>
-                        <td>0.0000</td>
-                        <td>2025-07-28T22:47:03.516361</td>
-                        <td>
-                            <a href="runs/20250728_224700/index.html">View</a>
-                            
-                        </td>
-                    </tr>
-                    
                 </tbody>
             </table>
         </section>
@@ -400,7 +400,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // Model performance chart
-        const modelData = {"gpt2": {"avg_accuracy": 0.35690559440559444, "runs": 10, "total_accuracy": 3.569055944055944}, "meta-llama/Llama-2-7b-hf": {"avg_accuracy": 0.0, "runs": 1, "total_accuracy": 0.0}, "mistralai/Mistral-7B-v0.1": {"avg_accuracy": 0.0, "runs": 1, "total_accuracy": 0.0}, "qwen2.5-1.5b-instruct-q4_k_m.gguf": {"avg_accuracy": 0.0, "runs": 9, "total_accuracy": 0.0}};
+        const modelData = {"gpt2": {"avg_accuracy": 0.34131461706631006, "runs": 11, "total_accuracy": 3.7544607877294105}, "meta-llama/Llama-2-7b-hf": {"avg_accuracy": 0.0, "runs": 1, "total_accuracy": 0.0}, "mistralai/Mistral-7B-v0.1": {"avg_accuracy": 0.0, "runs": 1, "total_accuracy": 0.0}, "qwen2.5-1.5b-instruct-q4_k_m.gguf": {"avg_accuracy": 0.0, "runs": 9, "total_accuracy": 0.0}};
         const ctx = document.getElementById('model-chart').getContext('2d');
         
         new Chart(ctx, {

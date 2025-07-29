@@ -1,0 +1,64 @@
+{
+  "run_id": "20250728_233812",
+  "timestamp": "2025-07-28T23:38:14.369948",
+  "model": {
+    "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "path": "/Users/victor/GitHub/snd-bench/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "size": "1.0G"
+  },
+  "results": {
+    "perplexity": {
+      "accuracy": 0,
+      "stderr": 0,
+      "samples": 0
+    }
+  },
+  "average_accuracy": 0.0,
+  "total_tasks": 1,
+  "wandb_history": [
+    {
+      "id": "43zib5if",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250728_233812",
+      "created_at": "2025-07-28T14:38:16Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/43zib5if",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "67tcxo0t",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250728_232219",
+      "created_at": "2025-07-28T14:22:24Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/67tcxo0t",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "gtl3262m",
+      "name": "test-model-q4_k_m.gguf-test_wandb_20250728",
+      "created_at": "2025-07-28T14:10:08Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/gtl3262m",
+      "model": "test-model-q4_k_m.gguf",
+      "metrics": {
+        "perplexity": 12.5,
+        "model_size_gb": 1.5
+      }
+    },
+    {
+      "id": "m3x28hiy",
+      "name": "Pipeline Test 2025-07-22 22:27",
+      "created_at": "2025-07-22T13:27:23Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/m3x28hiy",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m",
+      "metrics": {}
+    }
+  ],
+  "summary": "AI summary generation skipped - API not accessible"
+}
