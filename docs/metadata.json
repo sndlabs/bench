@@ -1,0 +1,253 @@
+{
+  "last_updated": "2025-07-29T15:43:32.583206",
+  "total_runs": 21,
+  "models": {
+    "qwen2.5-1.5b-instruct-q4_k_m.gguf": {
+      "runs": 9,
+      "best_accuracy": 0,
+      "latest_run": "20250729_004631"
+    },
+    "meta-llama/Llama-2-7b-hf": {
+      "runs": 1,
+      "best_accuracy": 0,
+      "latest_run": "lm-eval_20250729_101249"
+    },
+    "gpt2": {
+      "runs": 10,
+      "best_accuracy": 0.47013403263403264,
+      "latest_run": "lm-eval_20250729_122602"
+    },
+    "mistralai/Mistral-7B-v0.1": {
+      "runs": 1,
+      "best_accuracy": 0,
+      "latest_run": "lm-eval_20250729_103028"
+    }
+  },
+  "runs": [
+    {
+      "run_id": "20250728_154516",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-28T15:45:18.753833",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "20250728_224700",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-28T22:47:03.516361",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "20250728_232219",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-28T23:22:21.941064",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "20250728_233812",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-28T23:38:14.369948",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "20250729_000923",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-29T00:09:25.813340",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "20250729_002147",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-29T00:21:49.394243",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "20250729_002327",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-29T00:23:30.236864",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "20250729_002828",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-29T00:28:30.645059",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "20250729_004631",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "timestamp": "2025-07-29T00:46:34.502497",
+      "average_accuracy": 0.0,
+      "tasks": [
+        "perplexity"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_101249",
+      "model": "meta-llama/Llama-2-7b-hf",
+      "timestamp": "2025-07-29T10:12:50.118378",
+      "average_accuracy": 0.0,
+      "tasks": [],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_102437",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T10:26:17.612973",
+      "average_accuracy": 0.0,
+      "tasks": [],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_102746",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T10:29:25.124766",
+      "average_accuracy": 0.0,
+      "tasks": [],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_103028",
+      "model": "mistralai/Mistral-7B-v0.1",
+      "timestamp": "2025-07-29T10:30:29.277352",
+      "average_accuracy": 0.0,
+      "tasks": [],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_103331",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T10:35:07.419630",
+      "average_accuracy": 0.43813131313131315,
+      "tasks": [
+        "arc_easy"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_103534",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T10:37:13.405518",
+      "average_accuracy": 0.43813131313131315,
+      "tasks": [
+        "arc_easy"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_103822",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T10:40:00.627731",
+      "average_accuracy": 0.43813131313131315,
+      "tasks": [
+        "arc_easy"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_104952",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T10:51:31.269939",
+      "average_accuracy": 0.43813131313131315,
+      "tasks": [
+        "arc_easy"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_105733",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T10:59:10.692027",
+      "average_accuracy": 0.43813131313131315,
+      "tasks": [
+        "arc_easy"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_110714",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T11:08:49.577854",
+      "average_accuracy": 0.43813131313131315,
+      "tasks": [
+        "arc_easy"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_111954",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T11:23:38.023444",
+      "average_accuracy": 0.47013403263403264,
+      "tasks": [
+        "arc_easy",
+        "kobest_boolq"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    },
+    {
+      "run_id": "lm-eval_20250729_122602",
+      "model": "gpt2",
+      "timestamp": "2025-07-29T12:29:38.749071",
+      "average_accuracy": 0.47013403263403264,
+      "tasks": [
+        "arc_easy",
+        "kobest_boolq"
+      ],
+      "wandb_url": null,
+      "wandb_id": null
+    }
+  ]
+}

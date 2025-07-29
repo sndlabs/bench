@@ -1,0 +1,18 @@
+{
+  "run_id": "lm-eval_20250729_103028",
+  "timestamp": "2025-07-29T10:30:29.277352",
+  "model": {
+    "name": "mistralai/Mistral-7B-v0.1",
+    "path": "mistralai/Mistral-7B-v0.1"
+  },
+  "framework": "lm-eval",
+  "hardware_profile": "apple-m4-max",
+  "tasks": [
+    "arc_easy",
+    "klue_ynat"
+  ],
+  "total_tasks": 2,
+  "results": {},
+  "average_accuracy": 0.0,
+  "completed": true
+}

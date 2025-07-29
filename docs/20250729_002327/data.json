@@ -1,0 +1,100 @@
+{
+  "run_id": "20250729_002327",
+  "timestamp": "2025-07-29T00:23:30.236864",
+  "model": {
+    "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "path": "/Users/victor/GitHub/snd-bench/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "size": "1.0G"
+  },
+  "results": {
+    "perplexity": {
+      "accuracy": 0,
+      "stderr": 0,
+      "samples": 0
+    }
+  },
+  "average_accuracy": 0.0,
+  "total_tasks": 1,
+  "wandb_history": [
+    {
+      "id": "ztujkzvz",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250729_002327",
+      "created_at": "2025-07-28T15:23:31Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/ztujkzvz",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "ynlgwd36",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250729_002147",
+      "created_at": "2025-07-28T15:21:50Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/ynlgwd36",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "78qicwqu",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250729_000923",
+      "created_at": "2025-07-28T15:09:27Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/78qicwqu",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "43zib5if",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250728_233812",
+      "created_at": "2025-07-28T14:38:16Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/43zib5if",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "67tcxo0t",
+      "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf-20250728_232219",
+      "created_at": "2025-07-28T14:22:24Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/67tcxo0t",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "metrics": {
+        "average_accuracy": 0,
+        "model_size_gb": 1,
+        "task_perplexity": 0
+      }
+    },
+    {
+      "id": "gtl3262m",
+      "name": "test-model-q4_k_m.gguf-test_wandb_20250728",
+      "created_at": "2025-07-28T14:10:08Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/gtl3262m",
+      "model": "test-model-q4_k_m.gguf",
+      "metrics": {
+        "perplexity": 12.5,
+        "model_size_gb": 1.5
+      }
+    },
+    {
+      "id": "m3x28hiy",
+      "name": "Pipeline Test 2025-07-22 22:27",
+      "created_at": "2025-07-22T13:27:23Z",
+      "url": "https://wandb.ai/sndlabs/llm-bench/runs/m3x28hiy",
+      "model": "qwen2.5-1.5b-instruct-q4_k_m",
+      "metrics": {}
+    }
+  ],
+  "summary": "## Executive Summary: Qwen 2.5 1.5B Benchmark Results\n\nThe benchmark evaluation of the Qwen 2.5 1.5B model (quantized to 4-bit) reveals a critical failure in the testing framework rather than model performance issues. The results show zero accuracy across all metrics with no samples processed, indicating the perplexity evaluation did not execute properly. This null result set prevents any meaningful assessment of the model's actual capabilities.\n\nThe compact model size of 1.0GB suggests efficient quantization was achieved, making it suitable for resource-constrained deployments. However, without valid benchmark data, we cannot evaluate whether this compression impacted model quality. The testing infrastructure appears to have encountered an error during the perplexity calculation phase, requiring immediate troubleshooting before any performance conclusions can be drawn.\n\nThe benchmark results have been tracked in Weights & Biases at [https://wandb.ai/sndlabs/llm-bench/runs/ztujkzvz](https://wandb.ai/sndlabs/llm-bench/runs/ztujkzvz), allowing for detailed inspection of the run configuration and potential error logs. A re-run of the benchmark with proper error handling and validation checks is essential to obtain meaningful performance metrics for this quantized Qwen model."
+}

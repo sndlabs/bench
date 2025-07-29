@@ -1,0 +1,32 @@
+{
+  "run_id": "lm-eval_20250729_104952",
+  "timestamp": "2025-07-29T10:51:31.269939",
+  "model": {
+    "name": "gpt2",
+    "path": "gpt2"
+  },
+  "framework": "lm-eval",
+  "hardware_profile": "apple-m4-max",
+  "tasks": [
+    "arc_easy"
+  ],
+  "total_tasks": 1,
+  "results": {
+    "arc_easy": {
+      "accuracy": 0.43813131313131315,
+      "stderr": 0.010180937100600149,
+      "acc_norm": 0.3947811447811448,
+      "acc_norm_stderr": 0.01003003893588357,
+      "samples": null,
+      "_raw": {
+        "alias": "arc_easy",
+        "acc,none": 0.43813131313131315,
+        "acc_stderr,none": 0.010180937100600149,
+        "acc_norm,none": 0.3947811447811448,
+        "acc_norm_stderr,none": 0.01003003893588357
+      }
+    }
+  },
+  "average_accuracy": 0.43813131313131315,
+  "completed": true
+}

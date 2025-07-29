@@ -1,0 +1,18 @@
+{
+  "run_id": "lm-eval_20250729_101249",
+  "timestamp": "2025-07-29T10:12:50.118378",
+  "model": {
+    "name": "meta-llama/Llama-2-7b-hf",
+    "path": "meta-llama/Llama-2-7b-hf"
+  },
+  "framework": "lm-eval",
+  "hardware_profile": "apple-m4-max",
+  "tasks": [
+    "arc_easy",
+    "klue_ynat"
+  ],
+  "total_tasks": 2,
+  "results": {},
+  "average_accuracy": 0.0,
+  "completed": true
+}

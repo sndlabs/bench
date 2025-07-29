@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SND-Bench Dashboard</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <style>
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2196F3;
+        }
+        .wandb-badge {
+            background: #FFBE00;
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SND-Bench Dashboard</h1>
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="compare.html">Compare</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="stats">
+            <h2>Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Runs</h3>
+                    <div class="value">21</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Models Tested</h3>
+                    <div class="value">4</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Accuracy</h3>
+                    <div class="value">17.00%</div>
+                </div>
+                <div class="stat-card">
+                    <h3>W&B Runs</h3>
+                    <div class="value">0</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="recent-runs">
+            <h2>Recent Runs</h2>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Run ID</th>
+                        <th>Model</th>
+                        <th>Tasks</th>
+                        <th>Average Accuracy</th>
+                        <th>Timestamp</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_122602/index.html">lm-eval_20250729_122602</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>arc_easy, kobest_boolq</td>
+                        <td>0.4701</td>
+                        <td>2025-07-29T12:29:38.749071</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_122602/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_111954/index.html">lm-eval_20250729_111954</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>arc_easy, kobest_boolq</td>
+                        <td>0.4701</td>
+                        <td>2025-07-29T11:23:38.023444</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_111954/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_110714/index.html">lm-eval_20250729_110714</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>arc_easy</td>
+                        <td>0.4381</td>
+                        <td>2025-07-29T11:08:49.577854</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_110714/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_105733/index.html">lm-eval_20250729_105733</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>arc_easy</td>
+                        <td>0.4381</td>
+                        <td>2025-07-29T10:59:10.692027</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_105733/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_104952/index.html">lm-eval_20250729_104952</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>arc_easy</td>
+                        <td>0.4381</td>
+                        <td>2025-07-29T10:51:31.269939</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_104952/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_103822/index.html">lm-eval_20250729_103822</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>arc_easy</td>
+                        <td>0.4381</td>
+                        <td>2025-07-29T10:40:00.627731</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_103822/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_103534/index.html">lm-eval_20250729_103534</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>arc_easy</td>
+                        <td>0.4381</td>
+                        <td>2025-07-29T10:37:13.405518</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_103534/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_103331/index.html">lm-eval_20250729_103331</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td>arc_easy</td>
+                        <td>0.4381</td>
+                        <td>2025-07-29T10:35:07.419630</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_103331/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_103028/index.html">lm-eval_20250729_103028</a>
+                            
+                        </td>
+                        <td>mistralai/Mistral-7B-v0.1</td>
+                        <td></td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T10:30:29.277352</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_103028/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_102746/index.html">lm-eval_20250729_102746</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td></td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T10:29:25.124766</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_102746/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_102437/index.html">lm-eval_20250729_102437</a>
+                            
+                        </td>
+                        <td>gpt2</td>
+                        <td></td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T10:26:17.612973</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_102437/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/lm-eval_20250729_101249/index.html">lm-eval_20250729_101249</a>
+                            
+                        </td>
+                        <td>meta-llama/Llama-2-7b-hf</td>
+                        <td></td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T10:12:50.118378</td>
+                        <td>
+                            <a href="runs/lm-eval_20250729_101249/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/20250729_004631/index.html">20250729_004631</a>
+                            
+                        </td>
+                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                        <td>perplexity</td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T00:46:34.502497</td>
+                        <td>
+                            <a href="runs/20250729_004631/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/20250729_002828/index.html">20250729_002828</a>
+                            
+                        </td>
+                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                        <td>perplexity</td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T00:28:30.645059</td>
+                        <td>
+                            <a href="runs/20250729_002828/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/20250729_002327/index.html">20250729_002327</a>
+                            
+                        </td>
+                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                        <td>perplexity</td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T00:23:30.236864</td>
+                        <td>
+                            <a href="runs/20250729_002327/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/20250729_002147/index.html">20250729_002147</a>
+                            
+                        </td>
+                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                        <td>perplexity</td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T00:21:49.394243</td>
+                        <td>
+                            <a href="runs/20250729_002147/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/20250729_000923/index.html">20250729_000923</a>
+                            
+                        </td>
+                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                        <td>perplexity</td>
+                        <td>0.0000</td>
+                        <td>2025-07-29T00:09:25.813340</td>
+                        <td>
+                            <a href="runs/20250729_000923/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/20250728_233812/index.html">20250728_233812</a>
+                            
+                        </td>
+                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                        <td>perplexity</td>
+                        <td>0.0000</td>
+                        <td>2025-07-28T23:38:14.369948</td>
+                        <td>
+                            <a href="runs/20250728_233812/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/20250728_232219/index.html">20250728_232219</a>
+                            
+                        </td>
+                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                        <td>perplexity</td>
+                        <td>0.0000</td>
+                        <td>2025-07-28T23:22:21.941064</td>
+                        <td>
+                            <a href="runs/20250728_232219/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="runs/20250728_224700/index.html">20250728_224700</a>
+                            
+                        </td>
+                        <td>qwen2.5-1.5b-instruct-q4_k_m.gguf</td>
+                        <td>perplexity</td>
+                        <td>0.0000</td>
+                        <td>2025-07-28T22:47:03.516361</td>
+                        <td>
+                            <a href="runs/20250728_224700/index.html">View</a>
+                            
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="models">
+            <h2>Model Performance</h2>
+            <div id="model-chart" style="height: 400px; margin: 20px 0;">
+                <!-- Chart will be rendered by JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="assets/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Model performance chart
+        const modelData = {"gpt2": {"avg_accuracy": 0.35690559440559444, "runs": 10, "total_accuracy": 3.569055944055944}, "meta-llama/Llama-2-7b-hf": {"avg_accuracy": 0.0, "runs": 1, "total_accuracy": 0.0}, "mistralai/Mistral-7B-v0.1": {"avg_accuracy": 0.0, "runs": 1, "total_accuracy": 0.0}, "qwen2.5-1.5b-instruct-q4_k_m.gguf": {"avg_accuracy": 0.0, "runs": 9, "total_accuracy": 0.0}};
+        const ctx = document.getElementById('model-chart').getContext('2d');
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(modelData),
+                datasets: [{
+                    label: 'Average Accuracy',
+                    data: Object.values(modelData).map(m => m.avg_accuracy),
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 1.0
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

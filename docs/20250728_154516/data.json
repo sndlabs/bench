@@ -1,0 +1,26 @@
+{
+  "run_id": "20250728_154516",
+  "timestamp": "2025-07-28T15:45:18.753833",
+  "model": {
+    "name": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "path": "/Users/victor/GitHub/snd-bench/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "size": "1.0G"
+  },
+  "results": {
+    "perplexity": {
+      "accuracy": 0,
+      "stderr": 0,
+      "samples": 0
+    }
+  },
+  "average_accuracy": 0.0,
+  "total_tasks": 1,
+  "wandb": {
+    "success": false,
+    "error": "Error uploading run: returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"
+  },
+  "summary": "AI summary generation skipped - API not accessible",
+  "mainMetric": 0.0,
+  "mainMetricName": "Average Accuracy",
+  "averageAccuracy": 0.0
+}
