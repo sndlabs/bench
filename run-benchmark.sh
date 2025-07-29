@@ -229,86 +229,37 @@ select_model() {
 # Interactive menu for task selection
 select_tasks() {
     echo -e "\n${CYAN}=== Task Selection ===${NC}"
-    echo "Select benchmark tasks (you can select multiple):"
+    echo "Select benchmark tasks:"
     echo ""
-    echo "${GREEN}English Benchmarks:${NC}"
-    echo "1) hellaswag - Common sense reasoning"
-    echo "2) arc_easy - AI2 Reasoning Challenge (Easy)"
-    echo "3) arc_challenge - AI2 Reasoning Challenge (Challenge)"
-    echo "4) piqa - Physical interaction QA"
-    echo "5) winogrande - Commonsense reasoning"
-    echo "6) openbookqa - Open book question answering"
-    echo "7) boolq - Boolean questions"
-    echo "8) copa - Choice of plausible alternatives"
-    echo "9) rte - Recognizing textual entailment"
-    echo "10) multirc - Multi-sentence reading comprehension"
-    echo "11) wsc - Winograd schema challenge"
-    echo "12) mmlu - Massive multitask language understanding"
+    echo "${YELLOW}Korean Language Understanding:${NC}"
+    echo "1) kmmlu - Korean MMLU (대규모 다중 과제 언어 이해)"
+    echo "2) haerae - HAE-RAE Benchmark (한국어 이해 평가)"
     echo ""
-    echo "${YELLOW}Korean Benchmarks:${NC}"
-    echo "13) kobest_boolq - Korean boolean QA"
-    echo "14) kobest_copa - Korean commonsense reasoning"
-    echo "15) kobest_hellaswag - Korean sentence completion"
-    echo "16) kobest_sentineg - Korean sentiment analysis"
-    echo "17) kobest_wic - Korean word-in-context"
-    echo "18) kmmlu - Korean MMLU (all subjects)"
-    # Note: Some tasks may not be available in lm-eval
-    # echo "19) kmmlu_hard - Korean MMLU (hard questions)"
-    # echo "20) klue_nli - Korean NLI"
-    # echo "21) klue_sts - Korean semantic similarity"
-    # echo "22) klue_ynat - Korean topic classification"
-    # echo "23) nsmc - Naver sentiment movie corpus"
-    # echo "24) kohatespeech - Korean hate speech detection"
+    echo "${GREEN}Instruction Following:${NC}"
+    echo "3) ifeval - Instruction Following Evaluation"
     echo ""
     echo "${MAGENTA}Quick Sets:${NC}"
-    echo "25) English Core (hellaswag,arc_easy,piqa,boolq)"
-    echo "26) Korean Core (kobest_boolq,kobest_copa,kobest_hellaswag,kmmlu)"
-    echo "27) Full English Suite (tasks 1-12)"
-    echo "28) Full Korean Suite (tasks 13-24)"
-    echo "29) Multilingual Core (hellaswag,kobest_hellaswag,arc_easy,kobest_copa)"
-    echo "30) Custom (enter comma-separated task names)"
+    echo "4) All Tasks (kmmlu,haerae,ifeval)"
+    echo "5) Korean Only (kmmlu,haerae)"
+    echo "6) Custom (enter comma-separated task names)"
     echo ""
-    echo -n "Enter your choices (comma-separated, e.g., 1,2,13,14 or 25): "
+    echo -n "Enter your choice (1-6): "
     
     read choices
     
     # Task mapping using case statement for compatibility
     get_task_by_number() {
         case $1 in
-            1) echo "hellaswag" ;;
-            2) echo "arc_easy" ;;
-            3) echo "arc_challenge" ;;
-            4) echo "piqa" ;;
-            5) echo "winogrande" ;;
-            6) echo "openbookqa" ;;
-            7) echo "boolq" ;;
-            8) echo "copa" ;;
-            9) echo "rte" ;;
-            10) echo "multirc" ;;
-            11) echo "wsc" ;;
-            12) echo "mmlu" ;;
-            13) echo "kobest_boolq" ;;
-            14) echo "kobest_copa" ;;
-            15) echo "kobest_hellaswag" ;;
-            16) echo "kobest_sentineg" ;;
-            17) echo "kobest_wic" ;;
-            18) echo "kmmlu" ;;
-            19) echo "kmmlu_hard" ;;
-            20) echo "klue_nli" ;;
-            21) echo "klue_sts" ;;
-            # 22) echo "klue_ynat" ;;  # Task not available in lm-eval
-            23) echo "nsmc" ;;
-            24) echo "kohatespeech" ;;
-            25) echo "hellaswag,arc_easy,piqa,boolq" ;;
-            26) echo "kobest_boolq,kobest_copa,kobest_hellaswag,kmmlu" ;;
-            27) echo "hellaswag,arc_easy,arc_challenge,piqa,winogrande,openbookqa,boolq,copa,rte,multirc,wsc,mmlu" ;;
-            28) echo "kobest_boolq,kobest_copa,kobest_hellaswag,kobest_sentineg,kobest_wic,kmmlu" ;;  # Only available Korean tasks
-            29) echo "hellaswag,kobest_hellaswag,arc_easy,kobest_copa" ;;
+            1) echo "kmmlu" ;;
+            2) echo "haerae" ;;
+            3) echo "ifeval" ;;
+            4) echo "kmmlu,haerae,ifeval" ;;
+            5) echo "kmmlu,haerae" ;;
             *) echo "" ;;
         esac
     }
     
-    if [[ "$choices" == "30" ]]; then
+    if [[ "$choices" == "6" ]]; then
         echo -n "Enter custom task names (comma-separated): "
         read TASKS
     else
